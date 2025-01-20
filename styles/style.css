@@ -1,11 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 :root {
   --bg-color: #f7f7f7;
   --footer-color: #01acfd;
+  --font-family: "Quicksand", serif;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: var(--bg-color);
-  max-width: 97%;
+  margin: auto;
+  font-family: var(--font-family);
+  list-style: none;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* nav code */
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 0 0;
+  max-width: 100%;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.brand h1{
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+}
+.nav_item{
+  display: flex;
+  justify-content: space-between;
+}
+.nav_list{
+  margin-left: 1.5rem;
+}
+.fist{
+color: orange;
+font-size: 1.1rem;
+font-weight: bold;
+}
+.second{
+color: slateblue;
+font-size: 1.1rem;
+font-weight: bold;
+}
+.third{
+color: #05D4DF;
+font-size: 1.1rem;
+font-weight: bold;
+}
+.four{
+color: #5D58EF;
+font-size: 1.1rem;
+font-weight: bold;
+}
+.btn-contact{
+  background-color: orange;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 0.9rem 2.3rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+#menu_icon{
+  display: none;
+}
+@media screen and (max-width:576px) {
+  header{
+    border-bottom: 1px solid orange;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .brand{
+    margin: 0;
+    padding-bottom: 1rem;
+
+  }
+  .brand h1{
+    display: none;
+  }
+ .brand img{
+  max-width: 90%;
+ }
+  .contact_btn{
+    margin: 0;
+  }
+  .btn-contact{
+    margin: 0;
+    display: none;
+  }
+  .nav_menu{
+    display: none;
+    margin: 0;
+  }
+  #menu_icon{
+    display:block;
+   font-size: 2rem;
+  }
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+  header{
+    border-bottom: 1px solid orange;
+  }
+  .nav_menu{
+    display: none;
+    margin: 0;
+  }
+  nav{
+    margin: 0;
+    padding: 0 1rem;
+  }
+  .brand{
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  .contact_btn{
+    margin: 0;
+  }
+  .btn-contact{
+    margin: 0;
+    padding-right: 1rem;
+  }
 }
