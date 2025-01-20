@@ -179,3 +179,37 @@ color: skyblue;
   flex: 1;
   max-width: 100%;
 }
+@media screen and (max-width:576px) {
+  .banner_section{
+    flex-direction: column-reverse;
+  }
+  .banner_section img{
+    margin-bottom: 2rem;
+  }
+  .banner_content h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.banner_content p{
+  text-align: center;
+}
+.banner_btn{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  display: block;
+}
+}
+@media screen and (min-width:577px) and (max-width:992px) {
+  .banner_section{
+    flex-direction: column;
+  }
+  .banner_content p, h1, button{
+    margin: 2rem auto;
+    display: block;
+    text-align: center;
+  }
+}
