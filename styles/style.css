@@ -377,8 +377,10 @@ html {
 }
 .galary img {
   border-radius: 1rem 1rem 0 0;
+  min-width: 100%;
 }
 .left_card{
+  flex: 1;
   background-color:#fff ;
   border-radius: 1rem 1rem 1rem 1rem;
 }
@@ -421,4 +423,35 @@ background: transparent;
 }
 .right_card{
   border-radius: 1rem 1rem 1rem 1rem;
+}
+#story-2 ,.story-2{
+  background-color: #95B226;
+  padding: 0.6rem;
+  border-radius: 1rem;
+  position: relative;
+  top: -30px;
+  left: 30px;
+  font-family: var(--Raleway-font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+#story3{
+  background-color: #5D58F0;
+}
+.right_card p{
+  font-family: var(--font-family);
+  font-size: 1rem;
+  font-weight: bold;
+  padding:0 2rem;
+}
+@media screen and (max-width:576px) {
+  .left_card{
+    display: none;
+  }
+  .right_imas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 97%;
+  }
 }
