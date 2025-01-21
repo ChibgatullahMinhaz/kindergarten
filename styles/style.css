@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --bg-color: #f7f7f7;
   --footer-color: #01acfd;
   --font-family: "Quicksand", serif;
   --Raleway-font-family: "Raleway", serif;
-
 }
 * {
   margin: 0;
@@ -235,17 +234,17 @@ html {
   font-weight: bold;
   background: transparent;
 }
-.cards{
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   align-items: center;
   background: transparent;
 }
-.card img{
+.card img {
   background: transparent;
 }
-.card p{
+.card p {
   background: transparent;
   font-family: var(--Raleway-font-family);
   font-size: 0.9rem;
@@ -259,89 +258,167 @@ html {
 .card {
   padding: 2.4rem;
   text-align: center;
-  background: transparent linear-gradient( #DEF5FF ,#FFFFFF);
+  background: transparent linear-gradient(#def5ff, #ffffff);
   border-radius: 1rem;
   margin-top: 3rem;
   cursor: pointer;
 }
-.card h3{
+.card h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 2rem;
   background: transparent;
 }
-.card button{
-  color: #64C8FF;
+.card button {
+  color: #64c8ff;
   background: transparent;
   font-size: 1rem;
   font-weight: bold;
 }
-#card2{
-  background: transparent linear-gradient( #FFF4DC,#FFFFFF );
+#card2 {
+  background: transparent linear-gradient(#fff4dc, #ffffff);
 }
-#card2 button{
-  color: #F0AA00;
+#card2 button {
+  color: #f0aa00;
 }
-.card3_btn{
-  color: #8700FF;
+.card3_btn {
+  color: #8700ff;
 }
-.arrow_btn{
-  margin: 2rem 0 0 0 ;
+.arrow_btn {
+  margin: 2rem 0 0 0;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.arrow_btn i{
+.arrow_btn i {
   background-color: orange;
   padding: 1rem;
   border-radius: 50%;
   color: #fff;
   font-weight: bold;
-  cursor: pointer; 
+  cursor: pointer;
 }
-@media screen and (max-width:576px) {
-  .Standard_Curriculum{
-   padding: 0.1rem;
+@media screen and (max-width: 576px) {
+  .Standard_Curriculum {
+    padding: 0.1rem;
   }
-  .cards{
-    grid-template-columns: repeat(1,1fr);
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
     gap: 0.4rem;
   }
-  .card{
+  .card {
     margin-top: 0.3rem;
     max-width: 100%;
   }
-  .card p{
+  .card p {
     font-size: 10px;
   }
-  .Curriculum_title{
+  .Curriculum_title {
     font-family: var(--Raleway-font-family);
     font-weight: bold;
     font-size: 1.7rem;
     margin-bottom: 1rem;
   }
-  .arrow_btn{
+  .arrow_btn {
     display: none;
   }
 }
-@media screen and (min-width:578px) and (max-width:992px) {
-  .Standard_Curriculum{
-   padding: 0.1rem;
+@media screen and (min-width: 578px) and (max-width: 992px) {
+  .Standard_Curriculum {
+    padding: 0.1rem;
   }
-  .cards{
-    grid-template-columns: repeat(1,1fr);
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
     gap: 0.4rem;
   }
-  .card{
+  .card {
     margin-top: 0.3rem;
     max-width: 100%;
   }
-  .Curriculum_title{
+  .Curriculum_title {
     font-family: var(--Raleway-font-family);
     font-weight: bold;
     font-size: 1.7rem;
     margin-bottom: 1rem;
   }
+}
+/* story code */
+#story_area {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0) 0%,
+      rgba(255, 244, 220) 59%,
+      rgba(255, 244, 220, 0.65) 100%
+    ),
+    url("../assets/bg.png") no-repeat;
+    max-width: 100%;
+}
+.story_container {
+  max-width: 96%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+#story_area h1 {
+  background: transparent;
+  font-family: var(--font-family);
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.galary {
+  display: flex;
+  background: transparent;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+.galary img {
+  border-radius: 1rem 1rem 0 0;
+}
+.left_card{
+  background-color:#fff ;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+.left_card h2{
+font-family: var(--font-family);
+font-size: 1.8rem;
+font-weight: bold;
+padding: 1rem 2rem 0 2rem;
+margin-bottom: 1rem;
+background: transparent;
+
+}
+.left_card  button{
+  position: relative;
+  top: -30px;
+  left: 30px;
+}
+.left_card  p{
+  padding: 1rem 2rem 2rem 2rem;
+color: #666666;
+font-family: var(--Raleway-font-family);
+font-size: 1rem;
+font-weight: 500;
+background: transparent;
+}
+.left_card button {
+  color: #fff;
+  background-color: #3cd8e8;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: var(--Raleway-font-family);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.right_imas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  background: transparent;
+}
+.right_card{
+  border-radius: 1rem 1rem 1rem 1rem;
 }
