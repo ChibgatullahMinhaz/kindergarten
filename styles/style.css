@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --bg-color: #f7f7f7;
   --footer-color: #01acfd;
   --font-family: "Quicksand", serif;
+  --Raleway-font-family: "Raleway", serif;
+
 }
 * {
   margin: 0;
@@ -12,60 +15,60 @@
   font-family: var(--font-family);
   list-style: none;
   text-decoration: none;
+  border: none;
+  outline: none;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 /* nav code */
-.nav{
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0 0 0;
   max-width: 90%;
   margin: 0 auto;
-
 }
-.brand{
+.brand {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-.brand h1{
+.brand h1 {
   font-family: var(--font-family);
   font-weight: bold;
   font-size: 2rem;
   color: black;
 }
-.nav_item{
+.nav_item {
   display: flex;
   justify-content: space-between;
 }
-.nav_list{
+.nav_list {
   margin-left: 1.5rem;
 }
-.fist{
-color: orange;
-font-size: 1.1rem;
-font-weight: bold;
+.fist {
+  color: orange;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
-.second{
-color: slateblue;
-font-size: 1.1rem;
-font-weight: bold;
+.second {
+  color: slateblue;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
-.third{
-color: #05D4DF;
-font-size: 1.1rem;
-font-weight: bold;
+.third {
+  color: #05d4df;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
-.four{
-color: #5D58EF;
-font-size: 1.1rem;
-font-weight: bold;
+.four {
+  color: #5d58ef;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
-.btn-contact{
+.btn-contact {
   background-color: orange;
   border: none;
   border-radius: 12px;
@@ -75,93 +78,92 @@ font-weight: bold;
   font-size: 1.4rem;
   cursor: pointer;
 }
-#menu_icon{
+#menu_icon {
   display: none;
 }
-@media screen and (max-width:576px) {
-  header{
+@media screen and (max-width: 576px) {
+  header {
     border-bottom: 1px solid orange;
   }
-  nav{
+  nav {
     display: flex;
     justify-content: space-between;
     margin: 0;
   }
-  .brand{
+  .brand {
     margin: 0;
     padding-bottom: 1rem;
-
   }
-  .brand h1{
+  .brand h1 {
     display: none;
   }
- .brand img{
-  max-width: 90%;
- }
-  .contact_btn{
+  .brand img {
+    max-width: 90%;
+  }
+  .contact_btn {
     margin: 0;
   }
-  .btn-contact{
+  .btn-contact {
     margin: 0;
     display: none;
   }
-  .nav_menu{
+  .nav_menu {
     display: none;
     margin: 0;
   }
-  #menu_icon{
-    display:block;
-   font-size: 2rem;
-   margin-right: 1rem;
+  #menu_icon {
+    display: block;
+    font-size: 2rem;
+    margin-right: 1rem;
   }
 }
-@media screen and (min-width:577px) and (max-width:992px) {
-  header{
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  header {
     border-bottom: 1px solid orange;
   }
-  .nav_menu{
+  .nav_menu {
     display: none;
     margin: 0;
   }
-  nav{
+  nav {
     margin: 0;
     padding: 0 1rem;
   }
-  .brand{
+  .brand {
     margin: 0;
     padding-bottom: 1rem;
   }
-  .contact_btn{
+  .contact_btn {
     margin: 0;
   }
-  .btn-contact{
+  .btn-contact {
     margin: 0 1rem;
-    
   }
 }
-.banner_section{
+/* banner section code */
+.banner_section {
   display: flex;
   max-width: 1400px;
   max-width: 90%;
   margin: 0 auto;
   align-items: center;
 }
-.banner_content{
+.banner_content {
   flex: 1;
 }
-.banner_content h1{
+.banner_content h1 {
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-.banner_content p{
+.banner_content p {
   font-size: 1.2rem;
   font-weight: normal;
   margin-bottom: 1.5rem;
 }
-.banner_btn{
+.banner_btn {
   background-color: #000;
-  color:  #fff;
+  color: #fff;
   padding: 0.9rem 2rem;
   border: none;
   border-radius: 1rem;
@@ -169,47 +171,136 @@ font-weight: bold;
   font-weight: bold;
   cursor: pointer;
 }
-.bn-color-2{
-color: skyblue;
+.bn-color-2 {
+  color: skyblue;
 }
-.banner-color1{
-  color:  orange;
+.banner-color1 {
+  color: orange;
 }
-.banner_section img{
+.banner_section img {
   flex: 1;
   max-width: 100%;
 }
-@media screen and (max-width:576px) {
-  .banner_section{
+@media screen and (max-width: 576px) {
+  .banner_section {
     flex-direction: column-reverse;
   }
-  .banner_section img{
+  .banner_section img {
     margin-bottom: 2rem;
   }
-  .banner_content h1{
+  .banner_content h1 {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 2rem;
   }
-
-.banner_content p{
-  text-align: center;
+  .banner_content p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .banner_btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    display: block;
+  }
 }
-.banner_btn{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 2rem;
-  display: block;
-}
-}
-@media screen and (min-width:577px) and (max-width:992px) {
-  .banner_section{
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .banner_section {
     flex-direction: column;
   }
-  .banner_content p, h1, button{
+  .banner_content p,
+  h1,
+  button {
     margin: 2rem auto;
     display: block;
     text-align: center;
+  }
+}
+/* Standard_Curriculum  code*/
+.Standard_Curriculum {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: transparent;
+}
+
+.Curriculum_title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  background: transparent;
+}
+.card img{
+  background: transparent;
+}
+.card p{
+  background: transparent;
+  font-family: var(--Raleway-font-family);
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.8rem;
+  color: #808080;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.card {
+  padding: 2.4rem;
+  text-align: center;
+  background: transparent linear-gradient( #DEF5FF ,#FFFFFF);
+  border-radius: 1rem;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.card h3{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  background: transparent;
+}
+.card button{
+  color: #64C8FF;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#card2{
+  background: transparent linear-gradient( #FFF4DC,#FFFFFF );
+}
+#card2 button{
+  color: #F0AA00;
+}
+.card3_btn{
+  color: #8700FF;
+}
+@media screen and (max-width:576px) {
+  .Standard_Curriculum{
+   padding: 0.1rem;
+  }
+  .cards{
+    grid-template-columns: repeat(1,1fr);
+    gap: 0.4rem;
+  }
+  .card{
+    margin-top: 0.3rem;
+    max-width: 100%;
+  }
+  .Curriculum_title{
+    font-family: var(--Raleway-font-family);
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
   }
 }
