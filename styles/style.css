@@ -285,6 +285,22 @@ html {
 .card3_btn{
   color: #8700FF;
 }
+.arrow_btn{
+  margin: 2rem 0 0 0 ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.arrow_btn i{
+  background-color: orange;
+  padding: 1rem;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer; 
+}
 @media screen and (max-width:576px) {
   .Standard_Curriculum{
    padding: 0.1rem;
@@ -297,11 +313,17 @@ html {
     margin-top: 0.3rem;
     max-width: 100%;
   }
+  .card p{
+    font-size: 10px;
+  }
   .Curriculum_title{
     font-family: var(--Raleway-font-family);
     font-weight: bold;
     font-size: 1.7rem;
     margin-bottom: 1rem;
+  }
+  .arrow_btn{
+    display: none;
   }
 }
 @media screen and (min-width:578px) and (max-width:992px) {
