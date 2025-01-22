@@ -452,6 +452,25 @@ background: transparent;
   .right_imas{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    max-width: 97%;
+    max-width: 500px;
+  }
+  
+  #story-2 ,.story-2{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    position: relative;
+    top: -20px;
+    left: 20px;
+    font-size: 0.5rem;
+
+  }
+  .right_card p{
+    font-family: var(--font-family);
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding:0 0.4rem;
+  }
+  .right_card img{
+   max-width: 200px;
   }
 }
