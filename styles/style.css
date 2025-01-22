@@ -468,9 +468,28 @@ background: transparent;
     font-family: var(--font-family);
     font-size: 0.5rem;
     font-weight: bold;
-    padding:0 0.4rem;
+    padding:0  1rem 0.4rem;
   }
+  .right_card{
+    max-width: 200px;
+   }
   .right_card img{
-   max-width: 200px;
+   max-width: 100%;
+  }
+}
+@media screen and (min-width:578px)  and (max-width:1050px) {
+  .left_card{
+    display: none;
+  }
+  .right_imas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .right_card img{
+   max-width: 100%;
+  }
+  .right_card p{
+    padding:0  2rem 0.4rem;
   }
 }
