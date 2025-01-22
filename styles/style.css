@@ -445,6 +445,17 @@ background: transparent;
   font-weight: bold;
   padding:0 2rem;
 }
+.story-btn{
+  margin: 0 auto;
+  display: block;
+  background-color: black;
+  color: #fff;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 @media screen and (max-width:576px) {
   .left_card{
     display: none;
@@ -475,6 +486,10 @@ background: transparent;
    }
   .right_card img{
    max-width: 100%;
+  }
+  .story-btn{
+    font-size: 1rem;
+    padding: 1rem 2rem;
   }
 }
 @media screen and (min-width:578px)  and (max-width:1050px) {
