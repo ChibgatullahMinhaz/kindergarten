@@ -420,9 +420,11 @@ background: transparent;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   background: transparent;
+  border-radius: 1rem 1rem 1rem 1rem;
 }
 .right_card{
   border-radius: 1rem 1rem 1rem 1rem;
+  overflow: hidden;
 }
 #story-2 ,.story-2{
   background-color: #95B226;
@@ -482,14 +484,13 @@ background: transparent;
     padding:0  1rem 0.4rem;
   }
   .right_card{
-    max-width: 96%;
+    max-width: 96%; 
    }
   .right_card img{
    max-width: 100%;
   }
   .story-btn{
     font-size: 1rem;
-    padding: 1rem 2rem;
   }
 }
 @media screen and (min-width:578px)  and (max-width:1050px) {
