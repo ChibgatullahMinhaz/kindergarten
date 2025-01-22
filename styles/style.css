@@ -471,7 +471,7 @@ background: transparent;
     padding:0  1rem 0.4rem;
   }
   .right_card{
-    max-width: 200px;
+    max-width: 96%;
    }
   .right_card img{
    max-width: 100%;
@@ -490,6 +490,14 @@ background: transparent;
    max-width: 100%;
   }
   .right_card p{
-    padding:0  2rem 0.4rem;
+    max-width: 100%;
+    margin-top: -4rem;
+    padding-bottom: 1.4rem;
+  }
+  #story-2 ,.story-2{
+    position: relative;
+    top: -50px;
+    left: -20px;
+
   }
 }
