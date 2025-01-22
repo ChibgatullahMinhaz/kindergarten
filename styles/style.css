@@ -583,10 +583,39 @@ html {
 }
  .footer_icons{
   background: transparent;
-
 }
 .footer_icons img{
   background: transparent;
   margin-top: 2rem;
+}
+@media screen and (max-width:576px) {
+  .footer{
+    flex-direction: column;
+    gap: 3rem;
+    padding: 30px;
+  }
+}
+@media screen and (min-width:578px) and (max-width:1000px) {
+  .footer{
+    flex-direction: column;
+    padding: 60px;
+  }
+  .Footer_brand h1{
+    text-align: left;
+    color: yellow;
 
+  }
+  .footer_menu h1{
+    text-align: left;
+    color: yellow;
+  }
+  .Footer_brand img{
+    min-width: 50%;
+  }
+  .touch{
+    margin-top: 2rem;
+  }
+  .touch h3{
+    color: yellow;
+  }
 }
