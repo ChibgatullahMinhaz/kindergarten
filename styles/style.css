@@ -352,7 +352,7 @@ html {
       rgba(255, 244, 220, 0.65) 100%
     ),
     url("../assets/bg.png") no-repeat;
-    max-width: 100%;
+  max-width: 100%;
 }
 .story_container {
   max-width: 96%;
@@ -379,32 +379,31 @@ html {
   border-radius: 1rem 1rem 0 0;
   min-width: 100%;
 }
-.left_card{
+.left_card {
   flex: 1;
-  background-color:#fff ;
+  background-color: #fff;
   border-radius: 1rem 1rem 1rem 1rem;
 }
-.left_card h2{
-font-family: var(--font-family);
-font-size: 1.8rem;
-font-weight: bold;
-padding: 1rem 2rem 0 2rem;
-margin-bottom: 1rem;
-background: transparent;
-
+.left_card h2 {
+  font-family: var(--font-family);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem 2rem 0 2rem;
+  margin-bottom: 1rem;
+  background: transparent;
 }
-.left_card  button{
+.left_card button {
   position: relative;
   top: -30px;
   left: 30px;
 }
-.left_card  p{
+.left_card p {
   padding: 1rem 2rem 2rem 2rem;
-color: #666666;
-font-family: var(--Raleway-font-family);
-font-size: 1rem;
-font-weight: 500;
-background: transparent;
+  color: #666666;
+  font-family: var(--Raleway-font-family);
+  font-size: 1rem;
+  font-weight: 500;
+  background: transparent;
 }
 .left_card button {
   color: #fff;
@@ -422,12 +421,13 @@ background: transparent;
   background: transparent;
   border-radius: 1rem 1rem 1rem 1rem;
 }
-.right_card{
+.right_card {
   border-radius: 1rem 1rem 1rem 1rem;
   overflow: hidden;
 }
-#story-2 ,.story-2{
-  background-color: #95B226;
+#story-2,
+.story-2 {
+  background-color: #95b226;
   padding: 0.6rem;
   border-radius: 1rem;
   position: relative;
@@ -438,16 +438,16 @@ background: transparent;
   font-weight: 500;
   color: #fff;
 }
-#story3{
-  background-color: #5D58F0;
+#story3 {
+  background-color: #5d58f0;
 }
-.right_card p{
+.right_card p {
   font-family: var(--font-family);
   font-size: 1rem;
   font-weight: bold;
-  padding:0 2rem;
+  padding: 0 2rem;
 }
-.story-btn{
+.story-btn {
   margin: 0 auto;
   display: block;
   background-color: black;
@@ -458,62 +458,135 @@ background: transparent;
   font-size: 1.2rem;
   font-weight: bold;
 }
-@media screen and (max-width:576px) {
-  .left_card{
+@media screen and (max-width: 576px) {
+  .left_card {
     display: none;
   }
-  .right_imas{
+  .right_imas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 500px;
   }
-  
-  #story-2 ,.story-2{
+
+  #story-2,
+  .story-2 {
     padding: 0.5rem;
     border-radius: 1rem;
     position: relative;
     top: -20px;
     left: 20px;
     font-size: 0.5rem;
-
   }
-  .right_card p{
+  .right_card p {
     font-family: var(--font-family);
     font-size: 0.5rem;
     font-weight: bold;
-    padding:0  1rem 0.4rem;
+    padding: 0 1rem 0.4rem;
   }
-  .right_card{
-    max-width: 96%; 
-   }
-  .right_card img{
-   max-width: 100%;
+  .right_card {
+    max-width: 96%;
   }
-  .story-btn{
+  .right_card img {
+    max-width: 100%;
+  }
+  .story-btn {
     font-size: 1rem;
   }
 }
-@media screen and (min-width:578px)  and (max-width:1050px) {
-  .left_card{
+@media screen and (min-width: 578px) and (max-width: 1050px) {
+  .left_card {
     display: none;
   }
-  .right_imas{
+  .right_imas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  .right_card img{
-   max-width: 100%;
+
+  .right_card img {
+    max-width: 100%;
   }
-  .right_card p{
+  .right_card p {
     max-width: 100%;
     margin-top: -4rem;
     padding-bottom: 1.4rem;
   }
-  #story-2 ,.story-2{
+  #story-2,
+  .story-2 {
     position: relative;
     top: -50px;
     left: -20px;
-
   }
+}
+/* footer code */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 100%;
+  background-color: #01acfd;
+  padding: 100px;
+  color: #fff;
+  gap: 1rem;
+}
+.about_footer {
+  flex: 2;
+  background: transparent;
+  text-align: left;
+}
+.touch,
+.footer_menu
+{
+  flex: 1;
+  text-align: left;
+  background: transparent;
+}
+.about_footer p {
+  background: transparent;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 2rem;
+  text-align: left;
+}
+.Footer_brand {
+  background: transparent;
+  display: inline-flex;
+}
+.Footer_brand h1 {
+  background: transparent;
+  margin-left: 0.7rem;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 2rem;
+}
+.Footer_brand img {
+  background: transparent;
+}
+.footer_menu h1, ul li, ul {
+  background: transparent;
+}
+.footer_list{
+  margin-top: 1rem;
+}
+.footer_link{
+  background-color: #01acfd;
+  color: #fff;
+  font-weight: 500;
+}
+.touch{
+  margin-top: 0.5rem;
+}
+.touch h3{
+  background: transparent;
+  font-weight: 26px;
+  font-weight: bold;
+}
+ .footer_icons{
+  background: transparent;
+
+}
+.footer_icons img{
+  background: transparent;
+  margin-top: 2rem;
+
 }
